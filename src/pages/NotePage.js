@@ -58,7 +58,7 @@ const NotePage = ({ match, history }) => {
             deleteNote()
         }else if(noteId !== 'new'){
             updateNote()
-        }else if(noteId === 'new' && note.body !== null){
+        }else if(noteId === 'new' && note !== null){
             createNote()
         }
         history.push('/')
